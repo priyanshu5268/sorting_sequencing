@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <body>
+    <img src=" Enter your image source" alt = "image is not available" width = " " height = " ">
+    <title>Enter Your Title</title>
+    <hr>
+    <h1><p style="color: Enter color;"> Enter your heading</p></h1>
+    <form method="POST" enctype="multipart/form-data" action=".csv">
+          <input type="file" id="myfile" name="upload-file" accept=".csv">
+          <input type="submit" value="Validate">
+          <p style="color:green;">Validated Successfully</p>
+    </form>
+    <br>
+  <form action="/submit" target="_blank">
+        <input type="submit" value="SUBMIT" /><p style="color:blue;"> Click to submit records</p>
+  </form>
+    <br>
+    <br>
+    <form action="/fetch" target="_blank">
+        <input type="submit" value="FETCH" /><p style="color:blue;"> Click to fetch records</p>
+    </form>
+    <br>
+    <br>
+    <form action="/filter" target="_blank">
+        <input type="submit" value="FILTER" /><p style="color:blue;"> Click to filter records</p>
+    </form>
+  </body>
+</html>

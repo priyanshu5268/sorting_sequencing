@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %} SPSS</title>
+ <head>
+    <img src=" Enter your image source" alt = " " width = " " height = " ">
+    <title>Enter Your Title</title>
+    <hr>
+    <h1><p style="color: Enter color;"> Enter your heading</p></h1>
+    <form method="POST" enctype="multipart/form-data" action=".csv">
+          <input type="file" id="myfile" name="upload-file" accept=".csv">
+          <input type="submit" value="Validate">
+          <p style="color:blue;">Choose file to upload</p>
+    </form>
+    <br>
+    <form action="/submit" target="_blank">
+        <input type="submit" value="submit" />
+    </form>
+    <br>
+    <br>
+     <contop>
+         {% if name %}
+         <h3 style="color:blue;">hello {{name}}, </h3>
+         {% ebdif %}
+         </center>
+         <label for = "Input"> YEAR_Season</label>
+         <input type="text" name=" " />
+     </contop><input type="submit" value=Fetch" /><p style="color:blue;"> Click to Fetch Records</p></center>
+
+
+     {{data_var_fetch| safe}}
+    <br>
+    <br>
+    <form action="/filter" target="_blank">
+        <input type="submit"  value="FILTER" />
+    </form>
+    {{data_var_fetch| safe}}
+</head>
+    </body>
+</html>
